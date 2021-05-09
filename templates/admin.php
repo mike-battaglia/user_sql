@@ -165,7 +165,8 @@ function print_select_options(
                 print_text_input($l, "db-table-user-column-home", "Home", $_["db.table.user.column.home"]);
                 print_text_input($l, "db-table-user-column-password", "Password", $_["db.table.user.column.password"]);
                 print_text_input($l, "db-table-user-column-name", "Display name", $_["db.table.user.column.name"]);
-                print_text_input($l, "db-table-user-column-active", "Active", $_["db.table.user.column.active"]);
+                // "Active" should be checked against subscription status in Group Table below.
+                //print_text_input($l, "db-table-user-column-active", "Active", $_["db.table.user.column.active"]);
                 print_text_input($l, "db-table-user-column-disabled", "Disabled", $_["db.table.user.column.disabled"]);
                 print_text_input($l, "db-table-user-column-avatar", "Provide avatar", $_["db.table.user.column.avatar"]);
                 print_text_input($l, "db-table-user-column-salt", "Salt", $_["db.table.user.column.salt"]); ?>
@@ -196,7 +197,8 @@ function print_select_options(
                 <h3><?php p($l->t("Columns")); ?></h3>
                 <?php
                 print_text_input($l, "db-table-user_group-column-uid", "UID", $_["db.table.user_group.column.uid"]);
-                print_text_input($l, "db-table-user_group-column-gid", "GID", $_["db.table.user_group.column.gid"]); ?>
+                print_text_input($l, "db-table-user_group-column-gid", "GID", $_["db.table.user_group.column.gid"]);
+                print_text_input($l, "db-table-user-column-active", "Active", $_["db.table.user.column.active"]); ?>
             </fieldset>
         </div>
     </div>
