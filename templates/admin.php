@@ -198,7 +198,8 @@ function print_select_options(
                 <?php
                 print_text_input($l, "db-table-user_group-column-uid", "UID", $_["db.table.user_group.column.uid"]);
                 print_text_input($l, "db-table-user_group-column-gid", "GID", $_["db.table.user_group.column.gid"]);
-                print_text_input($l, "db-table-user-column-active", "Active", $_["db.table.user.column.active"]); ?>
+                //Check subscription status
+                print_text_input($l, "db-table-user-column-active", "Active", $_["db.table.user_group.column.active"]); ?>
             </fieldset>
         </div>
     </div>
