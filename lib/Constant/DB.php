@@ -48,7 +48,7 @@ final class DB
     const USER_GROUP_GID_COLUMN = "db.table.user_group.column.gid";
     const USER_GROUP_UID_COLUMN = "db.table.user_group.column.uid";
 
-    const USER_ACTIVE_COLUMN = "db.table.user.column.active";
+    const USER_ACTIVE_COLUMN = "db.table.user_group.column.active";
     const USER_AVATAR_COLUMN = "db.table.user.column.avatar";
     const USER_DISABLED_COLUMN = "db.table.user.column.disabled";
     const USER_EMAIL_COLUMN = "db.table.user.column.email";
